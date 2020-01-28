@@ -26,16 +26,17 @@
     <scm>
         <url>https://github.com/lusoalex/lusoalex-parent</url>
         <connection>https://github.com/lusoalex/lusoalex-parent.git</connection>
-        <developerConnection>scm:git:https://github.com/lusoalex/lusoalex-parent.git</developerConnection>
-      <tag>HEAD</tag>
+        <developerConnection>scm:git:git@github.com:lusoalex/lusoalex-parent.git</developerConnection>
+        <tag>HEAD</tag>
   </scm>
 
    <developers>
         <developer>
-            <email>lusoalex@users.noreply.github.com</email>
+            <email>16895682+lusoalex@users.noreply.github.com</email>
             <name>Alexandre Faria</name>
             <url>https://github.com/lusoalex</url>
             <id>lusoalex</id>
+            <timezone>Europe/Paris</timezone>
         </developer>
     </developers>
 
@@ -105,6 +106,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <useReleaseProfile>false</useReleaseProfile>
                     <releaseProfiles>release</releaseProfiles>
@@ -175,6 +177,7 @@
                         <artifactId>maven-release-plugin</artifactId>
                         <version>3.0.0-M1</version>
                         <configuration>
+                            <tagNameFormat>v@{project.version}</tagNameFormat>
                             <autoVersionSubmodules>true</autoVersionSubmodules>
                             <useReleaseProfile>false</useReleaseProfile>
                             <releaseProfiles>release</releaseProfiles>
